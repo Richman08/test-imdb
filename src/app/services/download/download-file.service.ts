@@ -18,8 +18,8 @@ export class DownloadFileService {
   }
 
   public convertToCSV(objArray: Movie[]): string {
-    const fields = ['Title', 'Year', 'Type'];
-    const opts = { fields };
+    const fields: string[] = ['Title', 'Year', 'Type'];
+    const opts: Object = { fields };
     const csv = parse(objArray, opts);
     console.log('csv', csv);
     return csv;
