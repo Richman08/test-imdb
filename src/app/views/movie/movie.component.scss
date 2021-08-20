@@ -1,0 +1,33 @@
+@import "../../styles/_mixins.scss";
+
+:host {
+  @include flex-content-center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.title {
+  color: darkblue;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.form {
+  @include flex-center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+
+  .field {
+    width: 50%;
+  }
+
+  .cta-button {
+    @include flex-content-center;
+    width: 100%;
+  }
+}

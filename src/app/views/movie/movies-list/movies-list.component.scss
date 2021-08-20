@@ -1,0 +1,18 @@
+@import '../../../styles/_mixins.scss';
+
+:host {
+  @include flex-content-center;
+  width: 100%;
+}
+
+.list >.item {
+  font-size: 16px;
+  color: #7d7d7d;
+  list-style-type: none;
+}
+
+.error {
+  color: red;
+  font-size: 30px;
+  font-weight: 300;
+}

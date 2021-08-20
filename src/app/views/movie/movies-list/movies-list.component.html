@@ -1,0 +1,6 @@
+<ul class="list">
+  <li class="item" *ngFor="let movie of (moviesList$ | async)?.Search">
+    {{movie?.Title}}, {{movie?.Year}}, {{movie?.Type}}
+  </li>
+</ul>
+<p class="error" *ngIf="moviesList?.Response === 'False'">Soooorry! {{moviesList?.Error}}</p>
